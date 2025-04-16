@@ -10,7 +10,7 @@
         "frontend": "yarn --cwd frontend run dev",
         "start:backend": "pm2 start backend/index.js --name homestay_be --  --port 5000",
         "start:frontend": "pm2 start \"yarn --cwd frontend run dev\" --name homestay_fe",
-        "start:all": "concurrently \"yarn start:backend\" \"yarn start:frontend\"",
+        "start": "concurrently \"yarn start:backend\" \"yarn start:frontend\"",
         "restart:backend": "pm2 restart homestay_be",
         "restart:frontend": "pm2 restart homestay_fe",
         "restart:all": "pm2 restart all",
